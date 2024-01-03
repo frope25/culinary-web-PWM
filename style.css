@@ -23,22 +23,35 @@ body {
     background-color: var(--bg);
 }
 
-.home-section .text-content .button {
+.home-section .text-content .home-btn {
     height: 2.5rem;
-    width: 8.75rem;
+    width: 8rem;
     border-radius: 0.5rem;
     background: var(--secondary);
-    color: var(--primary);
-    font-size: 1.1rem;
-    font-weight: 700;
+    border: 2px solid var(--primary);
     outline: none;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.home-section .text-content .button:hover {
+.home-section .text-content .home-btn:hover {
     background: var(--primary);
+    border: 2px solid var(--secondary);
+}
+
+.home-section .text-content .home-btn a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+
+}
+
+.home-section .text-content .home-btn:hover a {
     color: var(--secondary);
 }
+
 /* NAVBAR */
 
 .navbar {
@@ -243,7 +256,7 @@ body {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    
+    min-height: 600px;
 }
 
 .food-galery .food-image {
@@ -458,8 +471,8 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding-top: 5rem;
-    margin-top: 5rem;
+    padding-top: 10rem;
+    height: 100vh;
 }
 
 .contact h2 {
@@ -481,7 +494,7 @@ body {
     flex-wrap: wrap;
     border-radius: 0.5rem;
     width: 80%;
-    height: 80vh;
+    height: 32rem;
     box-shadow: -0.5rem -0.5rem 0.5rem 0 var(--secondary);
 }
   
@@ -490,11 +503,9 @@ body {
 }
   
 .contact .row .map {
-    flex:  1 1 30rem;
-    width: 100%;
+    width: 50%;
     height: 32rem;
-    object-fit: cover;
-    
+    object-fit: cover;   
 }
   
 .contact .row form {
@@ -574,7 +585,7 @@ footer {
     background-color: #131313;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 3rem;
+    margin-top: 10rem;
     padding-bottom: 2rem;
 }
   
@@ -617,7 +628,6 @@ footer .credit a {
     display: none;
     position: fixed;
     z-index: 9999;
-    /* left: 0; */
     top: 0;
     width: 100%;
     height: 100vh;
@@ -681,8 +691,6 @@ footer .credit a {
     width: 15rem;
     height: 15rem;
     border-radius: 0.5rem;
-    /* margin-left: 2rem; */
-    /* margin-top: auto; */
 }
 
 .popup-kopi .popup-card .popup-content .popup-text {
@@ -695,7 +703,7 @@ footer .credit a {
 }
 
 .popup-kopi .popup-card .popup-content .popup-text p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 
@@ -704,7 +712,6 @@ footer .credit a {
     display: none;
     position: fixed;
     z-index: 9999;
-    /* left: 0; */
     top: 0;
     width: 100%;
     height: 100vh;
@@ -768,12 +775,11 @@ footer .credit a {
     width: 15rem;
     height: 15rem;
     border-radius: 0.5rem;
-    /* margin-left: 2rem; */
-    /* margin-top: auto; */
 }
 
 .popup-soto .popup-card .popup-content .popup-text {
     margin-top: 2.5rem;
+    width: 65%;
 }
 
 .popup-soto .popup-card .popup-content .popup-text h3 {
@@ -781,7 +787,7 @@ footer .credit a {
 }
 
 .popup-soto .popup-card .popup-content .popup-text p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 
@@ -790,7 +796,6 @@ footer .credit a {
     display: none;
     position: fixed;
     z-index: 9999;
-    /* left: 0; */
     top: 0;
     width: 100%;
     height: 100vh;
@@ -854,12 +859,11 @@ footer .credit a {
     width: 15rem;
     height: 15rem;
     border-radius: 0.5rem;
-    /* margin-left: 2rem; */
-    /* margin-top: auto; */
 }
 
 .popup-gudeg .popup-card .popup-content .popup-text {
     margin-top: 2.5rem;
+    width: 65%;
 }
 
 .popup-gudeg .popup-card .popup-content .popup-text h3 {
@@ -867,7 +871,7 @@ footer .credit a {
 }
 
 .popup-gudeg .popup-card .popup-content .popup-text p {
-    font-size: 1.3rem
+    font-size: 1.1rem
 }    
 
 
@@ -876,7 +880,6 @@ footer .credit a {
     display: none;
     position: fixed;
     z-index: 9999;
-    /* left: 0; */
     top: 0;
     width: 100%;
     height: 100vh;
@@ -940,12 +943,11 @@ footer .credit a {
     width: 15rem;
     height: 15rem;
     border-radius: 0.5rem;
-    /* margin-left: 2rem; */
-    /* margin-top: auto; */
 }
 
 .popup-tongseng .popup-card .popup-content .popup-text {
     margin-top: 2.5rem;
+    width: 65%;
 }
 
 .popup-tongseng .popup-card .popup-content .popup-text h3 {
@@ -953,7 +955,7 @@ footer .credit a {
 }
 
 .popup-tongseng .popup-card .popup-content .popup-text p {
-    font-size: 1.3rem
+    font-size: 1.1rem
 }    
 
 /* Pop Up End */
